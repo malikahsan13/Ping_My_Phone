@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ping My Phone</string>
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-2201114375597651~3299786343</string>
+
+</resources>

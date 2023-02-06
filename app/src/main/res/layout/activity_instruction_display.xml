@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgound_color"
+    android:orientation="vertical">
+
+    <ImageView android:src="@drawable/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/instructionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSTRUCTIONS"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        android:layout_marginBottom="50dp"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/step1TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Set a Code of Your Choice"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/step2TV"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:text="2. Text your code from another phone to your phone to unmute your phone"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="45dp"
+        android:visibility="visible"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/step3TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Yes It's That Simple !!! "
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/defaultTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default Code is 'pingme' "
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        android:textSize="8pt" />
+
+</LinearLayout>
