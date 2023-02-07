@@ -29,8 +29,8 @@ public class InstructionsScreenActivity extends AppCompatActivity implements Vie
             case R.id.btn_start_app: {
 
                 Log.d(TAG, "Start App");
-//                SaveCodeClass savecode = new SaveCodeClass();
-//                savecode.setCode(Name, "pingme", getApplicationContext());
+                SaveCodeClass savecode = new SaveCodeClass();
+                savecode.setCode(Name, "pingme", getApplicationContext());
                 Toast.makeText(getApplicationContext(), "Your Default Code is 'pingme'", Toast.LENGTH_LONG).show();
                 Intent mainIntent = new Intent(InstructionsScreenActivity.this,MainActivity.class);
                 InstructionsScreenActivity.this.startActivity(mainIntent);

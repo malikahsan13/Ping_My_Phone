@@ -12,6 +12,8 @@ import android.os.Bundle;
 import android.telephony.SmsMessage;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+
 public class SecretCodeReciever extends BroadcastReceiver {
     public static final String Name = "_code_real_new";
     private String TAG = SecretCodeReciever.class.getSimpleName();
@@ -19,7 +21,7 @@ public class SecretCodeReciever extends BroadcastReceiver {
     //AudioManager ring  = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
     @Override
 
-    public void onReceive(Context context, Intent intent) {
+    public void onReceive(Context context, @NonNull Intent intent) {
         SaveCodeClass newcode = new SaveCodeClass();
         String current_code = newcode.getCode(Name,context);
         //Toast.makeText(context,current_code,Toast.LENGTH_LONG).show();

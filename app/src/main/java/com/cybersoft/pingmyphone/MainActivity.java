@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -33,6 +34,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_screen);
+        SecretCodeReciever secretCodeReciever = new SecretCodeReciever();
+        IntentFilter mIntentFilter = new IntentFilter();
+        mIntentFilter.addAction("android.provider.Telephony.SMS_RECEIVED");
+        registerReceiver(secretCodeReciever, mIntentFilter);
 /*
         if (ContextCompat.checkSelfPermission(MainActivity.this,
                 Manifest.permission.READ_SMS) == PackageManager.PERMISSION_GRANTED) {
